@@ -6,10 +6,10 @@ all: myclient myserver myserver2
 myclient: myclient.c
 	$(CC) $(CFLAGS) $< -o $@
 
-myserver: myclient.c
+myserver: myserver.c
 	$(CC) $(CFLAGS) $< -o $@
 
-myserver2: myclient.c
+myserver2: myserver2.c
 	$(CC) $(CFLAGS) $< -o $@
 
 clean:
